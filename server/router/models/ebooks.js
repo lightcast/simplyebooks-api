@@ -1,6 +1,6 @@
- var mongoose = require('mongoose');
+ const mongoose = require('mongoose');
 
- var EbookSchema = new mongoose.Schema({
+ const EbookSchema = new mongoose.Schema({
      authorUUID: { type: String, required: true },
      ebookTitle: { type: String, required: true },
      coverImg: { type: String },
@@ -11,6 +11,6 @@
      deletedDate: {type: Date}
  });
 
- var Ebook = mongoose.model('Ebook', EbookSchema);
+ const Ebook = mongoose.model('Ebook', EbookSchema);
 
  module.exports = Ebook;

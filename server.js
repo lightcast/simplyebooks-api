@@ -127,34 +127,4 @@ if (require.main === module) {
   })
 }
 
-
-  /*
-  // we run the app on port 80 and 443 if we are in PROD
-  if (process.env.NODE_ENV == 'production') {
-    const http = require('https');
-    const sslPath = '/home/ec2-user/ssl-cert/';
-    // const options = {
-    //   key: fs.readFileSync(sslPath + 'privkey.pem'),
-    //   cert: fs.readFileSync(sslPath + 'fullchain.pem')
-    // };
-    /*
-
-    const options = {
-      key: fs.readFileSync(sslPath + 'cert.key'),
-      cert: fs.readFileSync(sslPath + 'ssl_certificate.cer'),
-      ca: fs.readFileSync(sslPath + 'IntermediateCA.cer')
-    };
-    this.server = http.createServer(options,app);
-    this.io = require('socket.io').listen(this.server);
-    this.server.listen(8443);
-}*/
-
-
-
-// exports.app = app;
-// exports.runServer = runServer;
-//
-
-
-
 module.exports = app;
